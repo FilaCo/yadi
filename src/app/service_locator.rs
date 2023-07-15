@@ -1,8 +1,9 @@
 use crate::{Builder, Tag};
+use std::sync::Arc;
 
-pub struct Config {}
+pub struct ServiceLocator {}
 
-impl Config {
+impl ServiceLocator {
     pub fn new(builder: Builder) -> Self {
         Self {}
     }
@@ -11,7 +12,7 @@ impl Config {
         Builder::default()
     }
 
-    pub async fn get<'a, T>(&self, tag: Option<&Tag<'a>>) -> Option<&T> {
+    pub async fn get<'a, T>(&self, tag: Option<&Tag<'a>>) -> Option<Arc<T>> {
         todo!()
     }
 }

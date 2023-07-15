@@ -1,9 +1,9 @@
 mod builder;
-mod config;
 mod error;
 mod result;
+mod service_locator;
 
 pub use builder::Builder;
-pub use config::Config;
 pub use error::Error;
 pub use result::Result;
+pub use service_locator::ServiceLocator;

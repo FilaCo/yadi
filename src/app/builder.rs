@@ -1,4 +1,4 @@
-use crate::{Config, Tag};
+use crate::{Result, ServiceLocator, Tag};
 
 pub struct Builder {}
 
@@ -11,7 +11,15 @@ impl Builder {
         self
     }
 
+    pub fn add_scoped_trait<Trait, Impl>(&mut self, tag: Option<&Tag>) -> &mut Self {
+        self
+    }
+
     pub fn add_singleton<T>(&mut self, tag: Option<&Tag>) -> &mut Self {
+        self
+    }
+
+    pub fn add_singleton_trait<Trait, Impl>(&mut self, tag: Option<&Tag>) -> &mut Self {
         self
     }
 
@@ -19,7 +27,11 @@ impl Builder {
         self
     }
 
-    pub fn build(self) -> crate::Result<Config> {
+    pub fn add_transient_trait<Trait, Impl>(&mut self, tag: Option<&Tag>) -> &mut Self {
+        self
+    }
+
+    pub fn build(self) -> Result<ServiceLocator> {
         todo!()
     }
 }
