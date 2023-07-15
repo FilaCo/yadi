@@ -1,9 +1,18 @@
 [package]
 name = "yadi"
-version = "0.1.0"
+version = "0.0.1"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+license-file = "LICENSE"
+description = """
+YaDI is yet another dependency injection framework
+for writing applications with the Rust programming language
+"""
+homepage = "https://github.com/FilaCo/yadi"
+documentation = "https://docs.rs/yadi"
+repository = "https://github.com/FilaCo/yadi"
+readme = "README.md"
+keywords = ["dependency-injection", "yadi", "ioc", "di"]
+categories = ["rust-patterns"]
 
 [dependencies]
-async-trait = "0.1.71"
+async-trait = { version = "0.1" }
