@@ -1,4 +1,5 @@
-use crate::{Builder, Tag};
+use crate::app::service_locator::Builder;
+use crate::infra::dto::Tag;
 use std::sync::Arc;
 
 pub struct ServiceLocator {}

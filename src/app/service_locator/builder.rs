@@ -1,4 +1,6 @@
-use crate::{Result, ServiceLocator, Tag};
+use crate::app::result::Result;
+use crate::app::service_locator::ServiceLocator;
+use crate::infra::dto::Tag;
 
 pub struct Builder {}
 

@@ -2,10 +2,13 @@
 
 [![Crates.io][crates-badge]][crates-url]
 ![MIT OR Apache-2.0 licensed][license-badge]
+[![Conventional Commits][conventional-commits-badge]][conventional-commits-url]
 
 [crates-badge]: https://img.shields.io/crates/v/yadi.svg
 [crates-url]: https://crates.io/crates/yadi
 [license-badge]: https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue.svg
+[conventional-commits-badge]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white
+[conventional-commits-url]: https://conventionalcommits.org
 
 Yet another dependency injection framework for writing applications with
 the Rust programming language. It is:
