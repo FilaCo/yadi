@@ -1,6 +1,6 @@
 [package]
 name = "yadi"
-version = "1.0.0-alpha"
+version = "1.0.0-alpha.1"
 authors = ["Dmitrii Chizha <awesome.chekushka@gmail.com>"]
 edition = "2021"
 license = "MIT OR Apache-2.0"
