@@ -1,6 +1,7 @@
 [package]
 name = "yadi"
 version = "1.0.0-alpha"
+authors = ["Dmitrii Chizha <awesome.chekushka@gmail.com>"]
 edition = "2021"
 license = "MIT OR Apache-2.0"
 description = """
@@ -13,10 +14,6 @@ repository = "https://github.com/FilaCo/yadi"
 readme = "README.md"
 keywords = ["dependency-injection", "yadi", "ioc", "di"]
 categories = ["rust-patterns"]
-exclude = [
-    ".github",
-    "examples",
-    ".gitignore"
-]
+include = ["src/**/*.rs", "README.md", "LICENSE-APACHE", "LICENSE-MIT"]
 
 [dependencies]
