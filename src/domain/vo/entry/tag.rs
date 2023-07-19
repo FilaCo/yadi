@@ -1,7 +1,5 @@
-use crate::domain::vo::entry::Tag as DomainTag;
-
 #[derive(Debug, Eq, PartialEq, Clone, Hash)]
-pub struct Tag(String);
+pub(crate) struct Tag(String);
 
 impl Tag {
     pub fn new(raw_tag: &str) -> Self {
@@ -12,11 +10,5 @@ impl Tag {
 impl From<&str> for Tag {
     fn from(value: &str) -> Self {
         Self::new(value)
-    }
-}
-
-impl Into<DomainTag> for Tag {
-    fn into(self) -> DomainTag {
-        DomainTag::new(self.0.as_str())
     }
 }

@@ -17,7 +17,14 @@ the Rust programming language. It is:
 * **Fast**
 * **Easy-to-use**
 
-# 🚨 Not implemented! 🚨
+## Table of contents
+1. [Not implemented!](#-not-implemented-)
+2. [Overview](#overview)
+3. [Example](#example)
+4. [License](#license)
+5. [Contribution](#contribution)
+
+## 🚨 Not implemented! 🚨
 
 `yadi` has to be considered as a **DRAFT** project. Its API is unstable, most features are not implemented.
 Please **DO NOT** use it in your projects until v1.0.0 release.

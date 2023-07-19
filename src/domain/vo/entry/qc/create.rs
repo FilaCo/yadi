@@ -1,18 +1,20 @@
 use crate::domain::vo::entry::{Id, Lifetime};
 
-pub(crate) struct Entry {
+pub(crate) struct Create {
     id: Id,
     lifetime: Lifetime,
 }
 
-impl Entry {
+impl Create {
     pub fn new(id: Id, lifetime: Lifetime) -> Self {
         Self { id, lifetime }
     }
 
-    pub fn set_lifetime(&mut self, lifetime: Lifetime) -> &mut Self {
-        self.lifetime = lifetime;
+    pub fn id(&self) -> &Id {
+        &self.id
+    }
 
-        self
+    pub fn lifetime(&self) -> &Lifetime {
+        &self.lifetime
     }
 }

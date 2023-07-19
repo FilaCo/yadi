@@ -1,3 +1,2 @@
-pub mod error;
+pub mod container;
 pub mod result;
-pub mod service_locator;
