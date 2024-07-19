@@ -1,3 +1,6 @@
 [workspace]
 members = ["yadi", "yadi_derive"]
 resolver = "2"
+
+[workspace.dependencies]
+thiserror = { version = "1" }
