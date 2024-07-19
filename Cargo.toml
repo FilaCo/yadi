@@ -1,0 +1,3 @@
+[workspace]
+members = ["yadi", "yadi_derive"]
+resolver = "2"
