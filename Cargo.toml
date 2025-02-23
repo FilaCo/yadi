@@ -2,5 +2,10 @@
 members = ["yadi", "yadi_derive"]
 resolver = "2"
 
+[patch.crates-io]
+yadi = { path = "yadi" }
+
 [workspace.dependencies]
-thiserror = { version = "1" }
+proc-macro2 = { version = "1", default-features = false }
+quote = { version = "1", default-features = false }
+syn = { version = "2", default-features = false }

@@ -1,6 +1,21 @@
 [package]
 name = "yadi_derive"
 version = "0.1.0"
-edition = "2021"
+authors = ["FilaCo <awesome.chekushka@gmail.com>"]
+categories = ["rust-patterns"]
+description = "Macros 0.1 implementation of #[derive(Injectable)]."
+documentation = "https://docs.rs/yadi"
+edition = "2024"
+keywords = ["di", "ioc", "dependency-injection", "yadi", "derive"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/FilaCo/yadi"
+
+[lib]
+name = "serde_derive"
+proc-macro = true
 
 [dependencies]
+proc-macro2 = { workspace = true, features = ["proc-macro"] }
+quote = { workspace = true, features = ["proc-macro"] }
+syn = { workspace = true, features = ["clone-impls", "derive", "parsing", "proc-macro"] }

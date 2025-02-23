@@ -1,7 +1,22 @@
 [package]
 name = "yadi"
 version = "0.1.0"
-edition = "2021"
+authors = ["FilaCo <awesome.chekushka@gmail.com>"]
+categories = ["rust-patterns"]
+description = "Yet Another Dependency Injection framework for writing applications with Rust programming language."
+documentation = "https://docs.rs/yadi"
+edition = "2024"
+keywords = ["di", "ioc", "dependency-injection", "yadi"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/FilaCo/yadi"
 
 [dependencies]
-thiserror = { workspace = true }
+thiserror = { version = "2" }
+yadi_derive = { version = "0.1", optional = true, path = "../yadi_derive" }
+
+[features]
+default = []
+
+# Provide derive(Injectable) macro.
+derive = ["yadi_derive"]

@@ -1,12 +1,11 @@
 mod builder;
 mod container;
-mod error;
+mod entry;
+mod factory;
 mod injectable;
-mod result;
 
-pub mod prelude {
-    pub use super::{
-        builder::Builder, container::Container, error::YadiError, injectable::Injectable,
-        result::YadiResult,
-    };
-}
+pub use builder::*;
+pub use container::*;
+pub(crate) use entry::*;
+pub(crate) use factory::*;
+pub use injectable::*;
